@@ -20,7 +20,8 @@ export class AuthService {
   //state=state&code=VGNibzFWSWREZm01bjN1N3dicWlNUG1oa2xRRVNNdmVHelJGY2hPWGxNd2dxOjE2MjIxNjA4MjU4MjU6MToxOmFjOjE
   decodeStateCode(code: string) {
     const header = new HttpHeaders({
-      'Content-Type': 'application/x-www-form-urlencoded'
+      'Content-Type': 'application/x-www-form-urlencoded',
+      "Access-Control-Allow-Origin": window.location.origin
     });
 
     const body = {
