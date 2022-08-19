@@ -18,15 +18,15 @@ export class AuthService {
 
   // https://www.example.com? 
   //state=state&code=VGNibzFWSWREZm01bjN1N3dicWlNUG1oa2xRRVNNdmVHelJGY2hPWGxNd2dxOjE2MjIxNjA4MjU4MjU6MToxOmFjOjE
-  decodeStateCode(url: string) {
+  decodeStateCode(code: string) {
     const header = new HttpHeaders({
       'Content-Type': 'application/x-www-form-urlencoded'
     });
 
     const body = {
-      "code": "",
+      "code": code,
       "grant_type": "authorization_code",
-      "client_id": "rG9n6402A3dbUJKzXTNX4oWHJ",
+      "client_id": "aXpOOWZkSm1JVHJ3S0o3YkJhSmI6MTpjaQ",
       "redirect_uri": "https://twitterfactchecker.herokuapp.com/callback",
       "code_verifier": "challenge"
 

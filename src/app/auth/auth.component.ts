@@ -23,6 +23,15 @@ export class AuthCompnent implements OnInit {
 
   }
 
+  /**
+   * 
+  
+  
+  
+  https://twitterfactchecker.herokuapp.com/callback?state=state&code=SVVxdHM3UFdScEhIaU94UTNoeDZYYjYyMFN5S0N4c1hGeXhNZzh6RkJTNDNfOjE2NjA5MTYyMDk2MTA6MTowOmFjOjE
+
+   */
+
   loginWithRedirect(): void {
     // Call this to redirect the user to the login page
     // this.auth.loginWithRedirect();

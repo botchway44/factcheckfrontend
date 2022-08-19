@@ -3,13 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { SplashScreen } from './splashscreen/splashscreen.component';
 import { AuthCompnent } from './auth/auth.component';
 import { HomeCompnent } from './home/home.component';
+import { AuthCallbackCompnent } from './auth-callback/auth-callback.component';
 
 
 const routes: Routes = [
   { path: "", component: SplashScreen },
   { path: "auth", component: AuthCompnent },
   { path: "home", component: HomeCompnent },
-  { path: "callback", component: HomeCompnent },
+  { path: "callback", component: AuthCallbackCompnent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
