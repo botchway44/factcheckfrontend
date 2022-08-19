@@ -21,7 +21,8 @@ export class AuthService {
   decodeStateCode(code: string) {
     const header = new HttpHeaders({
       'Content-Type': 'application/x-www-form-urlencoded',
-      "Access-Control-Allow-Origin": window.location.origin
+      "Access-Control-Allow-Origin": "*",
+
     });
 
     const body = {
