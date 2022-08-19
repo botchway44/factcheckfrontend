@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  height: 95vh;
+}
+.links-heading{
+  width: 100%;
+  // background-color: red;
+  font-style: normal;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.links-heading h3{
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.links-heading button{
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+
+
+}

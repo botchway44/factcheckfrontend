@@ -34,7 +34,7 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     MenuBottomSheet
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,

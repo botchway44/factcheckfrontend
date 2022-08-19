@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   selector: 'app-home',
@@ -11,10 +10,9 @@ export class HomeCompnent {
 
 
 
-  constructor(public auth: AuthService) {
-    auth.getUser().subscribe((user) => {
-      console.log(user)
-    })
+  constructor(
+  ) {
+
   }
 
 
