@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: "", component: SplashScreen },
   { path: "auth", component: AuthCompnent },
   { path: "home", component: HomeCompnent },
+  { path: "callback", component: HomeCompnent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
