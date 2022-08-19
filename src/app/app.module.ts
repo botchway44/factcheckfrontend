@@ -18,6 +18,7 @@ import { MaterialModule } from './material.module';
 import { MenuBottomSheet } from './shared/lib/nav-header/menu-bottom-sheet';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { AuthService } from './shared/services/auth.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,10 +40,12 @@ import { AuthService } from './shared/services/auth.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule,
   ],
   providers: [
     AuthService,
-    { provide: LocationStrategy, useClass: PathLocationStrategy }
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
+    // { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })
