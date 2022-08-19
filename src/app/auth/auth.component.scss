@@ -1,0 +1,56 @@
+.splashscreen{
+  width: 100%;
+  height: 100%;
+  // background: rgb(0, 0, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.auth-header{
+  color:  black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+
+  margin-top: 30px;
+}
+
+.twitter-ico{
+  margin-right: 5px;
+}
+.auth-title-header{
+  font-size:2.19rem;
+  margin-bottom: 20px;;
+}
+
+.auth-title-subheading{
+  width: 70%;
+}
+.signinbutton{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #1D9BF0;
+  border-radius: 30px;
+
+  outline:none;
+  border: 0;
+  padding: 15px 20px;
+
+  color: white;
+  margin-top: 30px;
+}
+
+.disclaimer{
+  width: 70%;
+  text-align: center;
+
+  margin-top: 40px;
+}
+

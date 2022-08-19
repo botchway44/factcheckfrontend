@@ -1,0 +1,16 @@
+<mat-nav-list class="bottom-sheet">
+ 
+  <section>
+    <h2>Log out</h2>
+    <p>Are you sure you want to log out of Fact ?</p>
+  </section>
+
+  <a href="/auth" mat-list-item (click)="openLink($event)">
+    <span mat-line>Logout</span>
+  </a>
+
+  <a href="https://plus.google.com/" mat-list-item (click)="openLink($event)">
+    <span mat-line>Cancel</span>
+  </a>
+
+</mat-nav-list>

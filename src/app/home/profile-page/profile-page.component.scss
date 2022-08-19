@@ -1,0 +1,70 @@
+:host{
+  width:100%;
+  height:100%;
+}
+
+.profile-frame{
+  width: 100%;
+  height:100%;
+  // background: tomato;
+
+  display: flex;
+  // justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  padding: 50px 10px 10px 10px;
+}
+
+.profile-container{
+  width: 100%;
+  flex: 1 1;
+  // background-color: red;
+}
+
+.avatar{
+  width: 49px;
+  height: 49px;
+  border-radius:50%;
+  border: 2px solid #FFFFFF;
+} 
+
+
+.following-details{
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.following-explainer{
+  width: 90%;
+
+  margin-top: 30px;
+}
+
+.logout{
+  width: 100%;
+
+  display: flex;
+  justify-content:center;
+}
+.logout button{
+  width: 216px;
+  height: 60px;
+
+  background: rgba(229, 229, 229, 0.3);
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  color: #EF233C;
+
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,12 @@
+<section class="homescreen">
+  
+  <section class="main-content">
+
+    <app-search-page *ngIf="activePages.SEARCH"></app-search-page>
+    <app-links-page *ngIf="activePages.LINK"></app-links-page>
+    <app-profile-page *ngIf="activePages.PROFILE"></app-profile-page>
+
+  </section>
+
+  <app-navigation (triggered)="navigatePage($event)"></app-navigation>
+</section>

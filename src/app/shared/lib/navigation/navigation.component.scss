@@ -1,0 +1,31 @@
+:host{
+  width:100%;
+}
+.navigation{
+  width: 100%;
+  // height: 58px;
+  // background: rgb(165, 162, 162);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.navigation div{
+  // background-color: red;
+  padding: 15px;
+
+  box-sizing: border-box;
+  cursor: pointer;
+
+  flex-grow: 1;
+
+  display: flex;
+  justify-content:center;
+}
+
+.navigation div{
+  // border-right: 1px solid black;
+}

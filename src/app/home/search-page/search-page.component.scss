@@ -1,0 +1,39 @@
+:host{
+  width:100%;
+  height:100%;
+}
+
+.search-frame{
+  width: 100%;
+  height:100%;
+  // background: rgb(165, 162, 162);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  
+  padding: 50px 10px 10px 10px;
+}
+
+.empty-state{
+  width: 100%;
+  // background-color: magenta;
+  height: 100%;
+}
+
+.text-container{
+  width: 100%;
+  height: 100%;
+  // background-color:pink;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.text-container p{
+  width: 50%;
+  text-align: center;
+}

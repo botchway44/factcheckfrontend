@@ -1,0 +1,18 @@
+<section class="search-frame">
+  <app-search></app-search>
+
+  <section *ngIf="search" else="empty">
+      hello world
+  </section>
+
+
+  <ng-template [ngIf]="!search">
+    <section class="empty-state">
+     
+        <section class="text-container">
+          <p>Paste your tweet link to begin fact checking tweets</p>
+        </section>
+    </section>
+  </ng-template>
+
+</section>

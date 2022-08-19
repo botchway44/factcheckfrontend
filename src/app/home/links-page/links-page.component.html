@@ -1,0 +1,20 @@
+<section class="links-frame">
+
+  <app-nav-header [title]="'Emma’s Links '"></app-nav-header>
+
+  <section class="links-container" *ngIf="link" else="empty">
+    hello world
+  </section>
+
+
+<ng-template [ngIf]="!link">
+  <section class="empty-state">
+   <section class="empty-info">
+    <img src="/assets/svg/links-ico.svg" alt="" srcset="" />
+    <span class="empty-heading">It’s a bit dull here , try fact checking some tweets </span>
+   </section>
+
+    <button class="search-button">Search</button>
+  </section>
+</ng-template>
+</section>

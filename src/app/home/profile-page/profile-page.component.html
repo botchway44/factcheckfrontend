@@ -1,0 +1,31 @@
+<section class="profile-frame">
+  
+  <app-nav-header [title]="'Profile'"></app-nav-header>
+
+
+  <section class="profile-container" >
+
+    <img class="avatar" src="/assets/img/avatar.png" alt="" srcset="">
+
+    <section class="profile-details" >
+      <h5>Shang Chi</h5>
+      <p>@Shang Chi</p>
+    </section>
+
+
+    <section class="following-details">
+        <span> <strong>102</strong> followers</span>
+
+        <span> <strong>102</strong> following</span>
+    </section>
+
+
+    <section class="following-explainer">
+      <p>Fact check analysis looks through mulptiple sources to prove accurcy</p>
+    </section>
+
+    <section class="logout">
+        <button mat-raised-button (click)="openBottomSheet()">Log out</button>
+    </section>
+  </section>
+</section>
