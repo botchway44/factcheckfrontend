@@ -17,9 +17,9 @@ export class HomeCompnent {
 
 
   activePages = {
-    LINK: false,
+    LINK: true,
     SEARCH: false,
-    PROFILE: true,
+    PROFILE: false,
   };
 
   navigatePage(event: any) {

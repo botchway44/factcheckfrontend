@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node dist/factcheckfrontend/server/main.js",
+    "start:proxy": "ng serve --proxy-config proxy.config.json",
     "start:dev": "ng serve",
     "build": "ng build && ng run factcheckfrontend:server",
     "watch": "ng build --watch --configuration development",

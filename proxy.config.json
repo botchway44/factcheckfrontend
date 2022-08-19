@@ -1,0 +1,21 @@
+{
+  "/User/GetData/*": {
+    "target": "https://1f8c-196-11-90-118.eu.ngrok.io/User/GetData/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/dev/api/": ""
+    }
+  },
+
+  "/prod/api/*": {
+    "target": "https://raisemefunds-api.herokuapp.com/api/v2",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/prod/api/": ""
+    }
+  }
+}
