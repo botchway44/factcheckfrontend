@@ -17,6 +17,7 @@ import { BottomSheetLogout } from './home/profile-page/bottom-sheet';
 import { MaterialModule } from './material.module';
 import { MenuBottomSheet } from './shared/lib/nav-header/menu-bottom-sheet';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { AuthService } from './shared/services/auth.service';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     MaterialModule,
   ],
   providers: [
+    AuthService,
     { provide: LocationStrategy, useClass: PathLocationStrategy }
   ],
   bootstrap: [AppComponent]
