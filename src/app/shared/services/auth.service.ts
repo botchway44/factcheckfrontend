@@ -21,20 +21,15 @@ export class AuthService {
   decodeStateCode(code: string) {
     const header = new HttpHeaders({
       'Content-Type': 'application/x-www-form-urlencoded',
-      "Access-Control-Allow-Origin": "*",
+      "access-Control-Allow-Origin": "*",
 
     });
 
     const body = {
-      "code": code,
-      "grant_type": "authorization_code",
-      "client_id": "aXpOOWZkSm1JVHJ3S0o3YkJhSmI6MTpjaQ",
-      "redirect_uri": "https://twitterfactchecker.herokuapp.com/callback",
-      "code_verifier": "challenge"
-
+      "code": code
     }
 
-    return this.httpClient.post("https://api.twitter.com/2/oauth2/token", body, { headers: header })
+    return this.httpClient.post("https://1f8c-196-11-90-118.eu.ngrok.io/User/GetData/", body, { headers: header })
   }
 
   // curl \
