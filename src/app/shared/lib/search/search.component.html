@@ -3,9 +3,9 @@
   <h4 >Search</h4>
 
   <section class="search-input-container">
-    <input type="text" name="q" placeholder="Paste tweet url" id="search-input" />
+    <input type="text" matInput [(ngModel)]="title" name="q" placeholder="Paste tweet url" id="search-input" />
 
-    <span class="trigger-text">Check</span>
+    <span class="trigger-text" (click)="emitSearch()">Check</span>
   </section>
  
 

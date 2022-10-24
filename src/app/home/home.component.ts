@@ -17,8 +17,8 @@ export class HomeCompnent {
 
 
   activePages = {
-    LINK: true,
-    SEARCH: false,
+    LINK: false,
+    SEARCH: true,
     PROFILE: false,
   };
 

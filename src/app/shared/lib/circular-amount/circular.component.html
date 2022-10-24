@@ -1,0 +1,28 @@
+<section [ngStyle]="{ 'width': width+'px', 'height': height+'px' }" class="main-component">
+  <svg id="svg-renderer"
+  [attr.height]="height" [attr.width]="width">
+      <circle 
+      [attr.r]="radius+''" [attr.cx]="centerX" [attr.cy]="centerY"
+      [attr.stroke]="colors[0]" stroke-width="20"
+       fill="transparent" 
+      [attr.stroke-dasharray]="dashArray" 
+      
+      />
+
+      <circle 
+      [attr.r]="radius+''" [attr.cx]="centerX" [attr.cy]="centerY"
+      [attr.stroke]="colors[1]" stroke-width="25"
+       fill="transparent" 
+      [attr.stroke-dasharray]="dashArray" 
+      [attr.stroke-dashoffset]="-strokeOffset"
+      
+      />
+  </svg>
+
+  <section class="main-text">
+    <div [ngStyle]="{ 'color': textColor }" >{{text}}</div>
+    <div [ngStyle]="{ 'color': textColor }" >Accuracy</div>
+  </section>
+</section>
+
+<!-- 2 * PI * r -->

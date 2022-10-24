@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SearchCompnent {
   title = 'factcheck';
+  @Output() queryListener = new EventEmitter();
+
+  emitSearch() {
+    console.log("Emitting data", this.title);
+    this.queryListener.emit(this.title)
+  }
 }

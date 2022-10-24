@@ -1,9 +1,12 @@
 <section class="search-frame">
-  <app-search></app-search>
+  <app-search (queryListener)="searchResults($event)" ></app-search>
 
   <section *ngIf="search" else="empty">
       hello world
   </section>
+
+
+<app-search-results></app-search-results>
 
 
   <ng-template [ngIf]="!search">

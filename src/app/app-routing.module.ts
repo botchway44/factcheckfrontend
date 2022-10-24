@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: "auth", component: AuthCompnent },
   { path: "home", component: HomeCompnent },
   { path: "callback", component: AuthCallbackCompnent },
+  { path: 'test', loadChildren: () => import('./test/test.module').then(m => m.TestModule) },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
